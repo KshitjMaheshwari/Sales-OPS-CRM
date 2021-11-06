@@ -8,14 +8,14 @@
 }
 
 body {
-    background: #f5f6fa;
+    background: #6C757D;
 }
 
 header {
     height: 10vh;
     width: 100%;
     display: flex;
-    background: #348cd4;
+    background: #0f2027;
     align-items: center;
 }
 
@@ -27,7 +27,7 @@ header img {
 }
 
 aside {
-    background: rgb(5, 68, 104);
+    background: #334d50;
     position: fixed;
     top: 10vh;
     left: 0;
@@ -64,7 +64,7 @@ aside {
 .sidebar ul li a {
     display: block;
     width: 100%;
-    padding: 13px 0;
+    padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #10558d;
     color: rgb(241, 237, 237);
@@ -73,10 +73,8 @@ aside {
     text-decoration: none;
 }
 
-.sidebar ul li a #svg {
-    color: #dee4ec;
-    width: 30px;
-    display: inline-block;
+.sidebar ul li a:visited {
+    color: white;
 }
 
 .sidebar ul li a:hover,
@@ -97,5 +95,6 @@ aside {
 }
 
 main {
-    margin: 11vh 0 0 18vw;
+    margin: 10vh 0 0 16vw;
+    padding: 20px 0 0 20px;
 }
