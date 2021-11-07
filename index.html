@@ -17,12 +17,18 @@
     <div class="d-flex">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-white mx-5" href="#">Company name</a>
     </div>
-    <div class="d-flex ml-auto">
+    <div class="d-flex ml-auto" style="align-items: center">
         <input aria-label="Search" class="form-control form-control-dark" placeholder="Search"
-               style="width: 300px; border-radius: 24px" type="text">
+               style="width: 300px; border-radius: 24px; height: 38px" type="text">
+        <a aria-expanded="false" aria-haspopup="false" class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light text-white"
+           data-bs-toggle="dropdown" href="#"
+           role="button" style="font-size: 13px">
+            <img class="rounded-circle" style="background: white; width: 32px; height: 32px">
+            <span class="pro-user-name ms-1">Name</span>
+        </a>
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="#">Sign out</a>
+                <a class="nav-link text-white" href="#" style="font-size: 13px">Sign out</a>
             </li>
         </ul>
     </div>
@@ -31,7 +37,8 @@
     <ul class="navbar-nav">
         <li class="nav-item">
 
-            <a class="nav-link active item" href="#"><i class="fab fa-dashcube" style="font-size: 20px; padding: 0 10px"></i>Dashboard</a></li>
+            <a class="nav-link active item" href="#"><i class="fab fa-dashcube"
+                                                        style="font-size: 20px; padding: 0 10px"></i>Dashboard</a></li>
         <li class="nav-item"><a class=" nav-link" href="#">
             <span class="item">About</span>
         </a></li>
@@ -39,12 +46,21 @@
             <span class="item">About</span>
         </a></li>
         <li class="nav-item"><a class=" nav-link" href="#">
-            <span class="item">About</span>
+            <span class="item">Settings</span>
         </a></li>
     </ul>
 </aside>
-<main class="content-page">
-    <h5 style="color: #323A46; font-family: Poppins sans-serif;text-transform: uppercase;">Dashboard</h5>
+<main class="content-page bg-dark">
+    <h5 style="color: white; font-family: Poppins sans-serif;text-transform: uppercase;">Dashboard</h5>
+    <div class="card-body bg-warning" style="width: 300px; margin-top: 5%">
+        <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
+            <i class="fas fa-chart-bar avatar-title text-white" style="font-size: 48px"></i>
+            <div>
+                <h2 class="text-white mt-2 p-4">$92,847</h2>
+                <p class="text-white mb-0 text-truncate" style="margin-top: -20px; margin-left: 25px">Statistics</p>
+            </div>
+        </div> <!-- end row-->
+    </div>
 </main>
 </body>
 </html>

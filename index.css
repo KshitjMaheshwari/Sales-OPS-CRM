@@ -19,12 +19,11 @@ header {
     align-items: center;
 }
 
-header img {
-    width: 30px;
-    height: 30px;
-    background-color: white;
-
-}
+/*header img {*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    background-color: white;*/
+/*}*/
 
 aside {
     background: #334d50;
@@ -66,7 +65,6 @@ aside {
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid #10558d;
     color: rgb(241, 237, 237);
     font-size: 16px;
     position: relative;
@@ -74,8 +72,13 @@ aside {
 }
 
 .sidebar ul li a:visited {
-    color: white;
+    color: white
 }
+
+/*.sidebar ul li:first-child {*/
+/*    border-top: 1px solid grey;*/
+/*    */
+/*}*/
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
