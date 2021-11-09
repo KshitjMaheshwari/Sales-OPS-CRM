@@ -19,33 +19,33 @@
     </div>
 
 
-
-    <a  class="nav-link dropdown-toggle waves-effect waves-light text-white"
-       data-bs-toggle="dropdown" id="Addnew" href="#" role="button" onclick="fun1()" >
+    <!--For add new option-->
+    <a class="nav-link dropdown-toggle waves-effect waves-light text-white"
+       data-bs-toggle="dropdown" href="#" id="Addnew" onclick="fun1()" role="button">
         Add New
         <i class="mdi mdi-chevron-down"></i>
     </a>
     <div class="dropdown-menu show" data-popper-placement="bottom-start" style="display: none;">
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a class="dropdown-item" href="javascript:void(0);">
             <i class="fe-briefcase me-1"></i>
             <span>New Projects</span>
         </a>
 
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a class="dropdown-item" href="javascript:void(0);">
             <i class="fe-user me-1"></i>
             <span>Create Users</span>
         </a>
 
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a class="dropdown-item" href="javascript:void(0);">
             <i class="fe-bar-chart-line- me-1"></i>
             <span>Revenue Report</span>
         </a>
 
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a class="dropdown-item" href="javascript:void(0);">
             <i class="fe-settings me-1"></i>
             <span>Settings</span>
         </a>
@@ -53,35 +53,47 @@
         <div class="dropdown-divider"></div>
 
         <!-- item-->
-        <a href="javascript:void(0);" class="dropdown-item">
+        <a class="dropdown-item" href="javascript:void(0);">
             <i class="fe-headphones me-1"></i>
             <span>Help &amp; Support</span>
         </a>
 
     </div>
 
-
-
-
-    <div class="d-flex ml-auto" style="align-items: center">
+    <!--Search Bar-->
+    <div class="d-flex ml-auto" style="align-items: center;">
         <input aria-label="Search" class="form-control form-control-dark" placeholder="Search"
                style="width: 300px; border-radius: 24px; height: 38px" type="text">
-        <a aria-expanded="false" aria-haspopup="false"
-           class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light text-white"
+
+        <!--Notification icon-->
+        <a class="nav-link waves-effect waves-light text-white" data-bs-toggle="dropdown"
+           href="#" role="button">
+            <i class="far fa-bell noti-icon"></i>
+            <span class="badge bg-danger rounded-circle noti-icon-badge"
+                  style="position: relative; transform: translateY(-10px) translateX(-5px);">5</span>
+        </a>
+
+        <!--Name option-->
+        <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light text-white"
            data-bs-toggle="dropdown" href="#"
            role="button" style="font-size: 13px">
             <img class="rounded-circle" style="background: white; width: 32px; height: 32px">
             <span class="pro-user-name ms-1">Name</span>
         </a>
+        <!-- Login Functionality-->
         <ul class="navbar-nav px-3">
             <li class="nav-item text-nowrap">
-                <a class="nav-link text-white" href="./Login/loginPage.html" style="font-size: 13px">Sign out</a>
+                <a class="nav-link text-white" href="./Login/loginPage.html" id="SignIn" style="font-size: 13px">Sign
+                    out</a>
             </li>
         </ul>
     </div>
 </header>
+
+
+
 <aside class="sidebar">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav side-menu">
         <li class="nav-item">
             <a class="nav-link active item" href="#">
                 <i class="fab fa-dashcube" style="font-size: 20px; padding: 0 10px"></i>Dashboard</a></li>
@@ -96,8 +108,12 @@
         </a></li>
     </ul>
 </aside>
+
+
 <main class="content-page bg-dark">
     <h5 style="color: white; font-family: Poppins sans-serif;text-transform: uppercase;">Dashboard</h5>
+
+<!--Cards-->
     <div class="d-flex">
         <div class="card-body bg-warning" style="width: 300px; margin-top: 5%; margin-right: 20px">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
@@ -119,7 +135,7 @@
         </div>
         <div class="card-body bg-danger" style="width: 300px; margin: 5% 20px 0 20px">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
-                <i class="fab fa-superpowers avatar-title text-white" style="font-size: 48px"></i>
+                <i class="fas fa-dot-circle avatar-title text-white" style="font-size: 48px"></i>
                 <div>
                     <h2 class="text-white mt-2 p-4">847</h2>
                     <p class="text-white mb-0 text-truncate" style="margin-top: -20px; margin-left: 25px">Goals</p>
@@ -137,6 +153,8 @@
         </div>
     </div>
 
+
+<!--Progress bar-->
     <div class="card-body">
         <div class="dropdown float-end">
             <div class="dropdown-menu dropdown-menu-end">
@@ -155,7 +173,8 @@
         <div class="position-relative">
             <div class="row align-items-center">
                 <div class="col-xl-5">
-                    <h5 class="text-muted">Standard <span class="text-muted fw-normal"> - Single Site</span> <b class="px-2">-</b> <span
+                    <h5 class="text-muted">Standard <span class="text-muted fw-normal"> - Single Site</span> <b
+                            class="px-2">-</b> <span
                             class="text-muted">30%</span></h5>
                 </div>
                 <div class="col-xl-7">
@@ -168,7 +187,8 @@
 
             <div class="row align-items-center mt-2">
                 <div class="col-xl-5">
-                    <h5 class="text-muted">Multisite <span class="text-muted fw-normal"> - Unlimited sites</span> <b class="px-2">-</b>
+                    <h5 class="text-muted">Multisite <span class="text-muted fw-normal"> - Unlimited sites</span> <b
+                            class="px-2">-</b>
                         <span class="text-muted">60%</span></h5>
                 </div>
                 <div class="col-xl-7">
@@ -181,7 +201,8 @@
 
             <div class="row align-items-center mt-2">
                 <div class="col-xl-5">
-                    <h5 class="text-muted">Extended <span class="text-muted fw-normal"> - For paying users</span> <b class="px-2">-</b>
+                    <h5 class="text-muted">Extended <span class="text-muted fw-normal"> - For paying users</span> <b
+                            class="px-2">-</b>
                         <span class="text-muted">85%</span></h5>
                 </div>
                 <div class="col-xl-7">
@@ -193,6 +214,13 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
 </main>
 
 
