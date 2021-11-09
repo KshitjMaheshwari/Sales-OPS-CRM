@@ -9,8 +9,9 @@ var x = document.querySelector(".dropdown-menu");
     }
 }
 
-function fun2 (active){
-    if (active.display == 'none') {
+function fun2() {
+    var active = document.querySelector(".notification");
+    if (active.style.display == 'none') {
         active.style.display = 'unset';
     } else {
         active.style.display = "none";
