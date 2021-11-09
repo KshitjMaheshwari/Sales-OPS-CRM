@@ -101,3 +101,22 @@ main {
     margin: 10vh 0 0 16vw;
     padding: 20px 0 0 20px;
 }
+header .dropdown-menu {
+    position: absolute;
+    top: 10vh;
+    left: 250px;
+    min-width: 10rem;
+    padding: 0.25rem 0;
+    font-size: .8125rem;
+    color: #94a0ad;
+    text-align: left;
+    list-style: none;
+    /*background-color: #3b4651;*/
+    background-clip: padding-box;
+    border: 1px solid #414d59;
+    border-radius: 0.25rem;
+}
+
+header #Addnew {
+    margin-left: -650px;
+}
