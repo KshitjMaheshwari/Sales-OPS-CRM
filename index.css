@@ -1,7 +1,7 @@
 * {
     list-style: none;
     text-decoration: none;
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     font-family: Open Sans, sans-serif;
@@ -122,16 +122,29 @@ header #Addnew {
     margin-left: -650px;
 }
 
- header .badge {
-     display: inline-block;
-     padding: 0.25em 0.4em;
-     font-size: .75em;
-     font-weight: 700;
-     line-height: 1;
-     color: #fff;
-     text-align: center;
-     white-space: nowrap;
-     vertical-align: baseline;
-     border-radius: 0.25rem;
- }
+header .badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
 
+.footer {
+    bottom: 0;
+    padding: 19px 15px 20px;
+    position: fixed;
+    right: 0;
+    color: #8c98a5;
+    left: 245px;
+    background-color: #2b323a;
+}
+
+footer {
+    display: block;
+}

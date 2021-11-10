@@ -135,3 +135,12 @@ header .badge {
     border-radius: 0.25rem;
 }
 
+.footer {
+    bottom: 0;
+    padding: 19px 15px 20px;
+    position: fixed;
+    right: 0;
+    color: #8c98a5;
+    left: 245px;
+    background-color: #2b323a;
+}
