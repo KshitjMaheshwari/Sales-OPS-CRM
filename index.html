@@ -64,11 +64,12 @@
     <div class="d-flex ml-auto" style="align-items: center;">
         <input aria-label="Search" class="form-control form-control-dark" placeholder="Search"
                style="width: 300px; border-radius: 24px; height: 38px;" type="text">
-        <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" style="width: 20px; height: 25px; position: relative; transform: translateX(-39px)">
+        <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png"
+             style="width: 20px; height: 25px; position: relative; transform: translateX(-39px)">
 
         <!--Notification icon-->
         <a class="nav-link waves-effect waves-light text-white" data-bs-toggle="dropdown"
-           href="#" role="button" onclick="fun2()">
+           href="#" onclick="fun2()" role="button">
             <i class="far fa-bell noti-icon"></i>
             <span class="badge bg-danger rounded-circle noti-icon-badge"
                   style="position: relative; transform: translateY(-10px) translateX(-5px);">5</span>
@@ -206,7 +207,7 @@
             <span class="item">About</span>
         </a></li>
         <li class="nav-item"><a class=" nav-link" href="./Table/Table.html">
-            <i class="fas fa-table" style="font-size: 20px; padding: 0 5px"></i>Table</a></li>
+            <i class="fas fa-table" style="font-size: 20px; padding: 0 5px"></i>Target</a></li>
         <li class="nav-item"><a class=" nav-link" href="#">
             <span class="item">Settings</span>
         </a></li>
@@ -218,8 +219,8 @@
     <h5 style="color: white; font-family: Poppins sans-serif;text-transform: uppercase;">Dashboard</h5>
 
     <!--Cards-->
-    <div class="d-flex">
-        <div class="card-body bg-warning" style="width: 300px; margin-top: 5%; margin-right: 20px">
+    <div class="d-flex" style="margin-top: 2%">
+        <div class="card-body bg-warning" style="width: 300px; margin-right: 20px">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
                 <i class="fas fa-chart-bar avatar-title text-white" style="font-size: 48px"></i>
                 <div>
@@ -228,7 +229,8 @@
                 </div>
             </div>
         </div>
-        <div class="card-body" style="width: 300px; margin: 5% 20px 0 20px; background: linear-gradient(90deg,#2193b0,#6dd5ed)">
+        <div class="card-body"
+             style="width: 300px; margin:0 20px 0 20px; background: linear-gradient(90deg,#2193b0,#6dd5ed)">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
                 <i class="fas fa-bullseye avatar-title text-white" style="font-size: 48px"></i>
                 <div>
@@ -237,7 +239,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-body bg-danger" style="width: 300px; margin: 5% 20px 0 20px">
+        <div class="card-body bg-danger" style="width: 300px; margin: 0 20px 0 20px">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
                 <i class="fas fa-dot-circle avatar-title text-white" style="font-size: 48px"></i>
                 <div>
@@ -246,7 +248,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-body bg-success" style="width: 300px; margin: 5% 20px 0 20px">
+        <div class="card-body bg-success" style="width: 300px; margin: 0 20px 0 20px">
             <div class="avatar-lg rounded-circle bg-soft-light d-flex" style="align-items: center;">
                 <i class="fas fa-users avatar-title text-white" style="font-size: 48px"></i>
                 <div>
@@ -259,7 +261,7 @@
 
 
     <!--Progress bar-->
-    <div class="card-body">
+    <div class="card-body" style="margin: 35px 0">
         <div class="dropdown float-end">
             <div class="dropdown-menu dropdown-menu-end">
                 <!-- item-->
@@ -320,23 +322,90 @@
     </div>
 
 
-</main>
-<footer class="footer bg-dark">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6">
-                <script>document.write(new Date().getFullYear())</script> © Codefox theme by <a href="">Coderthemes</a>
+    <div class="d-flex">
+        <div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="w-100">
+                            <h5 class="text-muted mt-0">Active Users</h5>
+                            <h2 class="mb-0">900</h2>
+                        </div>
+                        <i class="mdi mdi-account text-light display-3 float-end"></i>
+                    </div>
+                    <p class="text-muted mt-3 mb-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        ratione voluptate msequi nesciunt.</p>
+                    <div>
+                        <a class="text-primary float-end" href="#"><i class="mdi mdi-arrow-right font-20"></i></a>
+                        <span class="bg-soft-primary fw-medium text-primary rounded px-2 font-12 py-1">Excellent</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div class="text-md-end footer-links d-none d-sm-block">
-                    <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">About Us</a>
-                    <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">Help</a>
-                    <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">Contact Us</a>
+        </div>
+
+        <div style="margin-left: 10px">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="w-100">
+                            <h5 class="text-muted mt-0">Business Profile</h5>
+                            <h2 class="mb-0">$40,340</h2>
+                        </div>
+                        <i class="mdi mdi-office-building text-light display-3 float-end"></i>
+                    </div>
+                    <p class="text-muted mt-3 mb-3">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                        quam nihil molestiae consequatur.</p>
+                    <div>
+                        <a class="text-primary float-end" href="#"><i class="mdi mdi-arrow-right font-20"></i></a>
+                        <span class="bg-soft-warning fw-medium text-warning rounded px-2 font-12 py-1">Excellent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-left: 10px">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <div class="w-100">
+                            <h5 class="text-muted mt-0">Market Price</h5>
+                            <h2 class="mb-0">$1,180</h2>
+                        </div>
+                        <i class="mdi mdi-database-marker text-light display-3 float-end"></i>
+                    </div>
+                    <p class="text-muted mt-3 mb-3">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                        blanditiis praesentium voluptatum deleniti atque.</p>
+                    <div>
+                        <a class="text-primary float-end" href="#"><i class="mdi mdi-arrow-right font-20"></i></a>
+                        <span class="bg-soft-pink fw-medium text-pink rounded px-2 font-12 py-1">Excellent</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</footer>
+
+
+    <footer class="footer bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <script>document.write(new Date().getFullYear())</script>
+                    © Codefox theme by <a href="">Coderthemes</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-md-end footer-links d-none d-sm-block">
+                        <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">About
+                            Us</a>
+                        <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">Help</a>
+                        <a href="javascript:void(0);" style="margin-right: 10px; color: #8c98a5; text-decoration: none">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
+
 <script src="DashboardHandlers.js"></script>
 </body>
 </html>

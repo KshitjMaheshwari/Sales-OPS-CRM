@@ -136,9 +136,9 @@ header .badge {
 }
 
 .footer {
-    bottom: 0;
+    /*bottom: 0;*/
     padding: 19px 15px 20px;
-    position: fixed;
+    /*position: fixed;*/
     right: 0;
     color: #8c98a5;
     left: 245px;
