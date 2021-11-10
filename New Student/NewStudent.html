@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="../index.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" rel="stylesheet">
+    <title>CRM</title>
+</head>
+<body>
+<header class="navbar fixed-top flex-md-nowrap">
+    <div class="d-flex">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0 text-white mx-5" href="#">Company name</a>
+    </div>
+
+
+    <!--For add new option-->
+    <a class="nav-link dropdown-toggle waves-effect waves-light text-white"
+       data-bs-toggle="dropdown" href="#" id="Addnew" onclick="fun1()" role="button">
+        Add New
+        <i class="mdi mdi-chevron-down"></i>
+    </a>
+    <div class="dropdown-menu show" data-popper-placement="bottom-start" style="display: none;">
+        <!-- item-->
+        <a class="dropdown-item" href="javascript:void(0);">
+            <i class="fe-briefcase me-1"></i>
+            <span>New Projects</span>
+        </a>
+
+        <!-- item-->
+        <a class="dropdown-item" href="javascript:void(0);">
+            <i class="fe-user me-1"></i>
+            <span>Create Users</span>
+        </a>
+
+        <!-- item-->
+        <a class="dropdown-item" href="javascript:void(0);">
+            <i class="fe-bar-chart-line- me-1"></i>
+            <span>Revenue Report</span>
+        </a>
+
+        <!-- item-->
+        <a class="dropdown-item" href="javascript:void(0);">
+            <i class="fe-settings me-1"></i>
+            <span>Settings</span>
+        </a>
+
+        <div class="dropdown-divider"></div>
+
+        <!-- item-->
+        <a class="dropdown-item" href="javascript:void(0);">
+            <i class="fe-headphones me-1"></i>
+            <span>Help &amp; Support</span>
+        </a>
+
+    </div>
+
+    <!--Search Bar-->
+    <div class="d-flex ml-auto" style="align-items: center;">
+        <input aria-label="Search" class="form-control form-control-dark" placeholder="Search"
+               style="width: 300px; border-radius: 24px; height: 38px" type="text">
+
+        <!--Notification icon-->
+        <a class="nav-link waves-effect waves-light text-white" data-bs-toggle="dropdown"
+           href="#" role="button" onclick="fun2()">
+            <i class="far fa-bell noti-icon"></i>
+            <span class="badge bg-danger rounded-circle noti-icon-badge"
+                  style="position: relative; transform: translateY(-10px) translateX(-5px);">5</span>
+        </a>
+        <div class="notification dropdown-menu dropdown-menu-end dropdown-lg show" data-popper-placement="bottom-end"
+             style="height: 400px; overflow: hidden; transform: translateX(900px); display: none; ">
+
+            <!-- item-->
+            <div class="dropdown-item noti-title">
+                <h5 class="m-0">
+                            <span class="float-end">
+                                <a class="text-dark" href="">
+                                    <small>Clear All</small>
+                                </a>
+                            </span>Notification
+                </h5>
+            </div>
+
+            <div class="noti-scroll" data-simplebar="init">
+                <div class="simplebar-wrapper" style="margin: 0px;">
+                    <div class="simplebar-height-auto-observer-wrapper">
+                        <div class="simplebar-height-auto-observer"></div>
+                    </div>
+                    <div class="simplebar-mask">
+                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
+                            <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden scroll;">
+                                <div class="simplebar-content" style="padding: 0px;">
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item active" href="javascript:void(0);">
+                                        <div class="notify-icon">
+                                            <img alt="" class="img-fluid rounded-circle"></div>
+                                        <p class="notify-details">Cristina Pride</p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Hi, How are you? What about our next meeting</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                        <div class="notify-icon bg-primary">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">1 min ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                        <div class="notify-icon">
+                                            <img alt="" class="img-fluid rounded-circle"></div>
+                                        <p class="notify-details">Karen Robinson</p>
+                                        <p class="text-muted mb-0 user-msg">
+                                            <small>Wow ! this admin looks good and awesome design</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                        <div class="notify-icon bg-warning">
+                                            <i class="mdi mdi-account-plus"></i>
+                                        </div>
+                                        <p class="notify-details">New user registered.
+                                            <small class="text-muted">5 hours ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                        <div class="notify-icon bg-info">
+                                            <i class="mdi mdi-comment-account-outline"></i>
+                                        </div>
+                                        <p class="notify-details">Caleb Flakelar commented on Admin
+                                            <small class="text-muted">4 days ago</small>
+                                        </p>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a class="dropdown-item notify-item" href="javascript:void(0);">
+                                        <div class="notify-icon bg-secondary">
+                                            <i class="mdi mdi-heart"></i>
+                                        </div>
+                                        <p class="notify-details">Carlos Crouch liked
+                                            <b>Admin</b>
+                                            <small class="text-muted">13 days ago</small>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="simplebar-placeholder" style="width: auto; height: 424px;"></div>
+                </div>
+                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
+                    <div class="simplebar-scrollbar" style="width: 0px; display: none;"></div>
+                </div>
+                <div class="simplebar-track simplebar-vertical" style="visibility: visible;">
+                    <div class="simplebar-scrollbar"
+                         style="height: 124px; display: block; transform: translate3d(0px, 0px, 0px);"></div>
+                </div>
+            </div>
+
+            <!-- All-->
+            <a class="dropdown-item text-center text-primary notify-item notify-all" href="javascript:void(0);">
+                View all
+                <i class="fe-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <!--Name option-->
+        <a class="nav-link dropdown-toggle nav-user me-0 waves-effect waves-light text-white"
+           data-bs-toggle="dropdown" href="#"
+           role="button" style="font-size: 13px">
+            <img class="rounded-circle" style="background: white; width: 32px; height: 32px">
+            <span class="pro-user-name ms-1">Name</span>
+        </a>
+        <!-- Login Functionality-->
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link text-white" href="../Login/loginPage.html" id="SignIn" style="font-size: 13px">Sign
+                    out</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<aside class="sidebar">
+    <ul class="navbar-nav side-menu">
+        <li class="nav-item">
+            <a class="nav-link active item" href="#">
+                <i class="fab fa-dashcube" style="font-size: 20px; padding: 0 10px"></i>Dashboard</a></li>
+        <li class="nav-item"><a class=" nav-link" href="#">
+            <span class="item">About</span>
+        </a></li>
+        <li class="nav-item"><a class=" nav-link" href="../Table/Table.html">
+            <i class="fas fa-table" style="font-size: 20px; padding: 0 5px"></i>Table</a></li>
+        <li class="nav-item"><a class=" nav-link" href="#">
+            <span class="item">Settings</span>
+        </a></li>
+    </ul>
+</aside>
+
+
+<main class="content-page bg-dark">
+
+</main>
+<script src="../DashboardHandlers.js"></script>
+</body>
+</html>
